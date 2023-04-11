@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A237E79629E4E49C0061A22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E79529E4E49C0061A22C /* AppDelegate.swift */; };
 		A237E79829E4E49C0061A22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E79729E4E49C0061A22C /* SceneDelegate.swift */; };
-		A237E79A29E4E49C0061A22C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E79929E4E49C0061A22C /* ViewController.swift */; };
 		A237E79D29E4E49C0061A22C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A237E79B29E4E49C0061A22C /* Main.storyboard */; };
 		A237E7A229E4E49D0061A22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A237E7A029E4E49D0061A22C /* LaunchScreen.storyboard */; };
 		A237E7BF29E4E94F0061A22C /* burnley.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A237E7AB29E4E94F0061A22C /* burnley.mp3 */; };
@@ -34,13 +33,13 @@
 		A237E7D229E4E94F0061A22C /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7BE29E4E94F0061A22C /* Teams.swift */; };
 		A237E7D429E4E97A0061A22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A237E7D329E4E97A0061A22C /* Assets.xcassets */; };
 		A237E7D729E4E9A30061A22C /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7D629E4E9A30061A22C /* TeamsViewModel.swift */; };
+		A237E7DA29E4FB220061A22C /* ChantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7D929E4FB220061A22C /* ChantsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A237E79229E4E49C0061A22C /* FootballChants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballChants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A237E79529E4E49C0061A22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A237E79729E4E49C0061A22C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A237E79929E4E49C0061A22C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A237E79C29E4E49C0061A22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A237E7A129E4E49D0061A22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A237E7A329E4E49D0061A22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		A237E7BE29E4E94F0061A22C /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		A237E7D329E4E97A0061A22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A237E7D629E4E9A30061A22C /* TeamsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
+		A237E7D929E4FB220061A22C /* ChantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChantsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 		A237E79429E4E49C0061A22C /* FootballChants */ = {
 			isa = PBXGroup;
 			children = (
+				A237E7D829E4FAC20061A22C /* ViewControllers */,
 				A237E7A929E4E94F0061A22C /* Resources */,
 				A237E7D529E4E9A30061A22C /* ViewModel */,
 				A237E79529E4E49C0061A22C /* AppDelegate.swift */,
 				A237E79729E4E49C0061A22C /* SceneDelegate.swift */,
-				A237E79929E4E49C0061A22C /* ViewController.swift */,
 				A237E7D329E4E97A0061A22C /* Assets.xcassets */,
 				A237E79B29E4E49C0061A22C /* Main.storyboard */,
 				A237E7A029E4E49D0061A22C /* LaunchScreen.storyboard */,
@@ -152,6 +152,14 @@
 				A237E7D629E4E9A30061A22C /* TeamsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A237E7D829E4FAC20061A22C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A237E7D929E4FB220061A22C /* ChantsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,10 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A237E7D229E4E94F0061A22C /* Teams.swift in Sources */,
-				A237E79A29E4E49C0061A22C /* ViewController.swift in Sources */,
 				A237E79629E4E49C0061A22C /* AppDelegate.swift in Sources */,
 				A237E7D729E4E9A30061A22C /* TeamsViewModel.swift in Sources */,
 				A237E79829E4E49C0061A22C /* SceneDelegate.swift in Sources */,
+				A237E7DA29E4FB220061A22C /* ChantsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
