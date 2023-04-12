@@ -34,6 +34,8 @@
 		A237E7D429E4E97A0061A22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A237E7D329E4E97A0061A22C /* Assets.xcassets */; };
 		A237E7D729E4E9A30061A22C /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7D629E4E9A30061A22C /* TeamsViewModel.swift */; };
 		A237E7DA29E4FB220061A22C /* ChantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7D929E4FB220061A22C /* ChantsViewController.swift */; };
+		A237E7DD29E626610061A22C /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7DC29E626610061A22C /* Team.swift */; };
+		A237E7DF29E626F70061A22C /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7DE29E626F70061A22C /* Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		A237E7D329E4E97A0061A22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A237E7D629E4E9A30061A22C /* TeamsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 		A237E7D929E4FB220061A22C /* ChantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChantsViewController.swift; sourceTree = "<group>"; };
+		A237E7DC29E626610061A22C /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		A237E7DE29E626F70061A22C /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		A237E79429E4E49C0061A22C /* FootballChants */ = {
 			isa = PBXGroup;
 			children = (
+				A237E7DB29E626310061A22C /* Model */,
 				A237E7D829E4FAC20061A22C /* ViewControllers */,
 				A237E7A929E4E94F0061A22C /* Resources */,
 				A237E7D529E4E9A30061A22C /* ViewModel */,
@@ -160,6 +165,15 @@
 				A237E7D929E4FB220061A22C /* ChantsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A237E7DB29E626310061A22C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A237E7DC29E626610061A22C /* Team.swift */,
+				A237E7DE29E626F70061A22C /* Manager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A237E7DD29E626610061A22C /* Team.swift in Sources */,
 				A237E7D229E4E94F0061A22C /* Teams.swift in Sources */,
 				A237E79629E4E49C0061A22C /* AppDelegate.swift in Sources */,
 				A237E7D729E4E9A30061A22C /* TeamsViewModel.swift in Sources */,
+				A237E7DF29E626F70061A22C /* Manager.swift in Sources */,
 				A237E79829E4E49C0061A22C /* SceneDelegate.swift in Sources */,
 				A237E7DA29E4FB220061A22C /* ChantsViewController.swift in Sources */,
 			);
