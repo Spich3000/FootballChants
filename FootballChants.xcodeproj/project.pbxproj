@@ -36,6 +36,7 @@
 		A237E7DA29E4FB220061A22C /* ChantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7D929E4FB220061A22C /* ChantsViewController.swift */; };
 		A237E7DD29E626610061A22C /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7DC29E626610061A22C /* Team.swift */; };
 		A237E7DF29E626F70061A22C /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7DE29E626F70061A22C /* Manager.swift */; };
+		A237E7E229E7A7690061A22C /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7E129E7A7690061A22C /* TeamTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		A237E7D929E4FB220061A22C /* ChantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChantsViewController.swift; sourceTree = "<group>"; };
 		A237E7DC29E626610061A22C /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		A237E7DE29E626F70061A22C /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		A237E7E129E7A7690061A22C /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		A237E79429E4E49C0061A22C /* FootballChants */ = {
 			isa = PBXGroup;
 			children = (
+				A237E7E029E7A7290061A22C /* Views */,
 				A237E7DB29E626310061A22C /* Model */,
 				A237E7D829E4FAC20061A22C /* ViewControllers */,
 				A237E7A929E4E94F0061A22C /* Resources */,
@@ -174,6 +177,14 @@
 				A237E7DE29E626F70061A22C /* Manager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A237E7E029E7A7290061A22C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A237E7E129E7A7690061A22C /* TeamTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 				A237E7D229E4E94F0061A22C /* Teams.swift in Sources */,
 				A237E79629E4E49C0061A22C /* AppDelegate.swift in Sources */,
 				A237E7D729E4E9A30061A22C /* TeamsViewModel.swift in Sources */,
+				A237E7E229E7A7690061A22C /* TeamTableViewCell.swift in Sources */,
 				A237E7DF29E626F70061A22C /* Manager.swift in Sources */,
 				A237E79829E4E49C0061A22C /* SceneDelegate.swift in Sources */,
 				A237E7DA29E4FB220061A22C /* ChantsViewController.swift in Sources */,
