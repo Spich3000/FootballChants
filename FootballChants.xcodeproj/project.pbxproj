@@ -37,6 +37,7 @@
 		A237E7DD29E626610061A22C /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7DC29E626610061A22C /* Team.swift */; };
 		A237E7DF29E626F70061A22C /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7DE29E626F70061A22C /* Manager.swift */; };
 		A237E7E229E7A7690061A22C /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7E129E7A7690061A22C /* TeamTableViewCell.swift */; };
+		A2BA59EF29ECF3CA009A529F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA59EE29ECF3CA009A529F /* Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		A237E7DC29E626610061A22C /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		A237E7DE29E626F70061A22C /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		A237E7E129E7A7690061A22C /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		A2BA59EE29ECF3CA009A529F /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				A237E7AA29E4E94F0061A22C /* Chants */,
 				A237E7BE29E4E94F0061A22C /* Teams.swift */,
+				A2BA59EE29ECF3CA009A529F /* Assets.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				A237E7DF29E626F70061A22C /* Manager.swift in Sources */,
 				A237E79829E4E49C0061A22C /* SceneDelegate.swift in Sources */,
 				A237E7DA29E4FB220061A22C /* ChantsViewController.swift in Sources */,
+				A2BA59EF29ECF3CA009A529F /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

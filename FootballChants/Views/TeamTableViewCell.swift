@@ -85,17 +85,20 @@ class TeamTableViewCell: UITableViewCell {
         container.layer.cornerRadius = 10
     }
     
-    func configure() {
-        container.backgroundColor = TeamType.arsenal.background
+    func configure(with item: Team) {
         
-        badgeImgVw.image = TeamType.arsenal.badge
+        container.backgroundColor = item.id.background
         
-        playbackBtn.setImage(UIImage(systemName: "play.circle.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32)), for: .normal)
+        badgeImgVw.image = item.id.badge
         
-        nameLbl.text = "Arsenal"
-        foundedLbl.text = "1800"
-        jobLbl.text = "Current manager: Mikel Artera"
-        infoLbl.text = "djhfvzkjfvakdjfvbalkjfvbafhjvbashfvafvbav"
+        playbackBtn.setImage(
+            item.isPlaying ? Assets.pause : Assets.play,
+            for: .normal)
+        
+        nameLbl.text = item.name
+        foundedLbl.text = item.founded
+        jobLbl.text = "Current \(item.manager.job.rawValue): \(item.manager.name)"
+        infoLbl.text = item.info
         
         self.contentView.addSubview(container) // Added container View into the content view
         
