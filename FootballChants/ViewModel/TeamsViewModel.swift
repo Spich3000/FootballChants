@@ -163,4 +163,15 @@ class TeamsViewModel {
                 job: .headCoach),
             founded: "1877"),
     ]
+    
+    func togglePlayback(for team: Team) {
+        teams
+            .forEach { item in
+                if item.id == team.id {
+                    item.isPlaying.toggle()
+                } else {
+                    item.isPlaying = false
+                }
+            }
+    }
 }

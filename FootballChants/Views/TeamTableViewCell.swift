@@ -7,6 +7,12 @@
 
 import UIKit
 
+protocol TeamTableViewCellDelegate: class  {
+    
+    func didTapPlayback(for team: Team)
+    
+}
+
 class TeamTableViewCell: UITableViewCell {
 
     static let cellId = "TeamTableViewCell"
@@ -74,10 +80,13 @@ class TeamTableViewCell: UITableViewCell {
        let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.numberOfLines = 0
-        lbl.font = .systemFont(ofSize: 20, weight: .medium)
+        lbl.font = .systemFont(ofSize: 16, weight: .medium)
         lbl.textColor = .white
         return lbl
     }()
+    
+    private weak var delegate: TeamTableViewCellDelegate?
+    private var team: Team?
     
     // MARK: - Lifecycle
     override func layoutSubviews() {
@@ -85,7 +94,19 @@ class TeamTableViewCell: UITableViewCell {
         container.layer.cornerRadius = 10
     }
     
-    func configure(with item: Team) {
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.team = nil
+        self.delegate = nil
+        self.contentView.subviews.forEach { $0.removeFromSuperview() }
+    }
+    
+    func configure(with item: Team, delegate: TeamTableViewCellDelegate) {
+        
+        self.team = item
+        self.delegate = delegate
+        
+        playbackBtn.addTarget(self, action: #selector(didTapPlayback), for: .touchUpInside)
         
         container.backgroundColor = item.id.background
         
@@ -135,6 +156,12 @@ class TeamTableViewCell: UITableViewCell {
 
         ])
 
+    }
+    
+    @objc func didTapPlayback() {
+        if let team = team {
+            delegate?.didTapPlayback(for: team)
+        }
     }
     
 }
