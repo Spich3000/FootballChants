@@ -112,9 +112,7 @@ class TeamTableViewCell: UITableViewCell {
         
         badgeImgVw.image = item.id.badge
         
-        playbackBtn.setImage(
-            item.isPlaying ? Assets.pause : Assets.play,
-            for: .normal)
+        playbackBtn.setImage(item.isPlaying ? Assets.pause : Assets.play, for: .normal)
         
         nameLbl.text = item.name
         foundedLbl.text = item.founded

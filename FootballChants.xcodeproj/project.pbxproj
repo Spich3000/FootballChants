@@ -37,6 +37,7 @@
 		A237E7DD29E626610061A22C /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7DC29E626610061A22C /* Team.swift */; };
 		A237E7DF29E626F70061A22C /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7DE29E626F70061A22C /* Manager.swift */; };
 		A237E7E229E7A7690061A22C /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237E7E129E7A7690061A22C /* TeamTableViewCell.swift */; };
+		A29C37C229EE146C005D6361 /* AudioManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C37C129EE146C005D6361 /* AudioManagerViewModel.swift */; };
 		A2BA59EF29ECF3CA009A529F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA59EE29ECF3CA009A529F /* Assets.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		A237E7DC29E626610061A22C /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		A237E7DE29E626F70061A22C /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		A237E7E129E7A7690061A22C /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		A29C37C129EE146C005D6361 /* AudioManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManagerViewModel.swift; sourceTree = "<group>"; };
 		A2BA59EE29ECF3CA009A529F /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				A237E7D629E4E9A30061A22C /* TeamsViewModel.swift */,
+				A29C37C129EE146C005D6361 /* AudioManagerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				A237E79629E4E49C0061A22C /* AppDelegate.swift in Sources */,
 				A237E7D729E4E9A30061A22C /* TeamsViewModel.swift in Sources */,
 				A237E7E229E7A7690061A22C /* TeamTableViewCell.swift in Sources */,
+				A29C37C229EE146C005D6361 /* AudioManagerViewModel.swift in Sources */,
 				A237E7DF29E626F70061A22C /* Manager.swift in Sources */,
 				A237E79829E4E49C0061A22C /* SceneDelegate.swift in Sources */,
 				A237E7DA29E4FB220061A22C /* ChantsViewController.swift in Sources */,
@@ -435,6 +439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XJCC23FML;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FootballChants/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -465,6 +470,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XJCC23FML;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FootballChants/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
