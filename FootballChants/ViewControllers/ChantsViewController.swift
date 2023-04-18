@@ -39,7 +39,6 @@ class ChantsViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.view.backgroundColor = .white
     }
-    
 
     /*
     // MARK: - Navigation

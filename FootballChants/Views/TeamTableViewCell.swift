@@ -7,10 +7,8 @@
 
 import UIKit
 
-protocol TeamTableViewCellDelegate: class  {
-    
+protocol TeamTableViewCellDelegate: AnyObject {
     func didTapPlayback(for team: Team)
-    
 }
 
 class TeamTableViewCell: UITableViewCell {
